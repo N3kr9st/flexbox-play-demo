@@ -1,0 +1,114 @@
+html {
+    scrollbar-width: none; /* Versteckt Scrollbalken in unterstützten Browsern */
+}
+
+body {
+    margin: 0; /* Entfernt Standardabstand */
+    min-height: 100vh; /* Körperhöhe mindestens so hoch wie die Ansichtshöhe */
+    display: flex;
+    flex-direction: column; /* Elemente im Body vertikal anordnen */
+
+}
+
+main {
+    display: flex;
+    flex: 1; /* Nimmt verbleibenden Platz im Body ein */
+    flex-direction: row; /* Inhalte nebeneinander anordnen */
+    align-items: center; /* Vertikal zentrieren */
+    justify-content: center; /* Horizontal zentrieren */
+    text-align: center;
+    width: 100%;
+    overflow: auto; /* Scrollen ermöglichen bei Überlauf */
+    margin-top: 200px; /* Platz für das feste Header-Element */
+    margin-bottom: 100px; /* Platz für das feste Footer-Element */
+    height: 100%;
+}
+
+div {
+    border: 1px solid black; /* Schwarze Rahmen um alle divs */
+}
+
+footer {
+    position: fixed; /* Fest am unteren Rand fixiert */
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+
+}
+
+header {
+    position: fixed; /* Fest am oberen Rand fixiert */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+
+}
+
+header, footer {
+    width: 100%;
+    overflow: auto; 
+    background-color: lightblue; /* Einheitliche Hintergrundfarbe */
+}
+
+/* Einzelne farbige Boxen mit spezifischer Hintergrundfarbe */
+div#a1 { background-color: lightgreen; }
+div#a2 { background-color: lightyellow; }
+div#a3 { background-color: lightpink; }
+div#a4 { background-color: lightgray; }
+div#a5 { background-color: lightcoral; }
+div#a6 { background-color: lightcyan; }
+div#a7 { background-color: lightgoldenrodyellow; }
+div#a8 { background-color: lightsteelblue; }
+div#a9 { background-color: lightseagreen; }
+div#a10 { background-color: lightblue; }
+
+/* Einheitliche Größe für alle Boxen */
+div#a1, div#a2,
+div#a3, div#a4, div#a5, div#a6, div#a7, div#a8, div#a9, div#a10 {
+    width: 150px;
+    height: auto; /* Höhe passt sich dem Inhalt an */
+}
+
+/* Bereich im Header für Bedienelemente */
+div#header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 90%;
+}
+
+/* Einzelne Steuerungsbereiche im Header */
+div#divToggle, div#divJustify, div#divAlign, div#divGap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    border: 1px solid black;
+}
+
+/* Überschrift */
+h1 {
+    font-size: 50px;
+    margin: 0;
+    color: chocolate;
+    text-align: center;
+}
+
+
