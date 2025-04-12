@@ -22,6 +22,8 @@ main {
     margin-top: 200px; /* Platz für das feste Header-Element */
     margin-bottom: 100px; /* Platz für das feste Footer-Element */
     height: 100%;
+    border:2px solid red;
+    scrollbar-width: none;
 }
 
 
