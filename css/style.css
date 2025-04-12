@@ -75,7 +75,7 @@ div#a10 { background-color: lightblue; }
 /* Einheitliche Größe für alle Boxen */
 div#a1, div#a2,
 div#a3, div#a4, div#a5, div#a6, div#a7, div#a8, div#a9, div#a10 {
-    width: 150px;
+    width: auto;
     height: auto; /* Höhe passt sich dem Inhalt an */
     border: 1px solid black;
 }
