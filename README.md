@@ -8,7 +8,8 @@
     - `align-items`
     - `gap`
 
-    Die visuelle Darstellung ändert sich sofort, sodass man die Wirkung der verschiedenen Flexbox-Einstellungen kennenlernen kann.
+    Die visuelle Darstellung ändert sich sofort, sodass man die 
+    Wirkung der verschiedenen Flexbox-Einstellungen kennenlernen kann.
 
 
 
