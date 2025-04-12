@@ -24,9 +24,6 @@ main {
     height: 100%;
 }
 
-div {
-    border: 1px solid black; /* Schwarze Rahmen um alle divs */
-}
 
 footer {
     position: fixed; /* Fest am unteren Rand fixiert */
@@ -51,6 +48,7 @@ header {
     justify-content: center;
     text-align: center;
     height: 200px;
+    scrollbar-width: none; /* Versteckt Scrollbalken in unterstützten Browsern */
 
 }
 
@@ -77,6 +75,7 @@ div#a1, div#a2,
 div#a3, div#a4, div#a5, div#a6, div#a7, div#a8, div#a9, div#a10 {
     width: 150px;
     height: auto; /* Höhe passt sich dem Inhalt an */
+    border: 1px solid black;
 }
 
 /* Bereich im Header für Bedienelemente */
@@ -100,7 +99,7 @@ div#divToggle, div#divJustify, div#divAlign, div#divGap {
     height: 100%;
     width: 100%;
     font-size: 25px;
-    border: 1px solid black;
+    gap:10px;
 }
 
 /* Überschrift */
@@ -110,5 +109,9 @@ h1 {
     color: chocolate;
     text-align: center;
 }
-
+span{
+    color:blueviolet;
+    font-size: larger;
+    font-style: italic;
+}
 
