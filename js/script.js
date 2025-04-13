@@ -5,22 +5,26 @@ document.addEventListener('DOMContentLoaded', function() {
     const buttonJustify = document.getElementById('justify-toggle');
     const buttonAlign = document.getElementById('align-toggle');
     const buttonGap = document.getElementById('gap-toggle');
-
+    this.getElementById('dirSpan').textContent = getComputedStyle(container).flexDirection;
+    this.getElementById('justSpan').textContent = getComputedStyle(container).justifyContent;
+    this.getElementById('alignSpan').textContent = getComputedStyle(container).alignContent;
+    this.getElementById('gapSpan').textContent = "0";
 
 
     buttonDir.addEventListener('click', () => {
     const currentDirection = getComputedStyle(container).flexDirection;
     const span = this.getElementById('dirSpan');
 
+
     if (currentDirection === 'column') {
         container.style.flexDirection = 'row';
         buttonDir.textContent = 'Wechsle zu row';
-        span.textContent = 'row';
+        span.textContent = 'row';    
 
     } else {
         container.style.flexDirection = 'column';
         buttonDir.textContent = 'Wechsle zu column';
-        span.textContent = 'column';
+        span.textContent = 'column';    
     }
     });
 
@@ -54,11 +58,12 @@ document.addEventListener('DOMContentLoaded', function() {
     buttonAlign.addEventListener('click', () => {
     const currentAlign = getComputedStyle(container).alignItems;
     const span = this.getElementById('alignSpan');
+
     if (currentAlign === 'stretch') {
         container.style.alignItems = 'center';
         buttonAlign.textContent = 'Wechsle zu center';
         span.textContent = "center";
-    }   else if (currentAlign === 'center') {
+    }else if (currentAlign === 'center') {
         container.style.alignItems = 'flex-start';
         buttonAlign.textContent = 'Wechsle zu flex-start';
         span.textContent = "flex-start";
